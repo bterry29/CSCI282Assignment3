@@ -1,6 +1,14 @@
 // runtime/start.rs
 // This file provides the entry point for compiled programs
-
+#[no_mangle]
+extern "C" fn snek_error(errcode:i64){
+    if errcode == 1{
+        eprintln!("invalid argument");
+    }else if errcode == 2{
+        eprintln!("overflow");
+    }
+    std::process::exit(1);
+}
 #[link(name = "our_code")]
 extern "C" {
     // The \x01 here is an undocumented feature of LLVM that ensures
