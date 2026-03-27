@@ -1,5 +1,5 @@
-# CSCI-282-Assignment1
+# CSCI-282-Assignment3
 ## Brandon Terry
-### February 20th 2026
+### March 27th 2026
 
-This project is the implementation of a compiler for a small language called an Adder, which supports 32-bit integers and three unary operations: add1, sub1, and negate. It includes all the source code and a test file that includes 10 test cases.
+This project is a Rust-based Cobra compiler that extends a semester-long compiler project with booleans, conditionals, loops, mutation, tagged values, and runtime error checking. It includes all the source code and a test file that includes 20 test cases.
